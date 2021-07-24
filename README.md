@@ -1,5 +1,4 @@
-# Integrated-Projects-1
-Re-imagining of the web site for ALU
+# Re-imagining of the web site for ALU
 
 
 This website developed by Group 1, consisting of Ineza Ronnie, Atorudibo Seth, Onwuka Nnamdi, Olomada Umma-Hani Ayomide & Briggs Tamunotonye 
