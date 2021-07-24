@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life</title>
+    <link href="/build/tailwind.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/student-life/student-life.css">
+    <link rel="stylesheet" type="text/css" href="/website/index.css">
+</head>
+
+<body>
+    <!-- Creates a container with flex to hold the logo and links for the navbar -->
+    <main class="bg-white" id="main">
+    <!-- Creates a container with flex to hold the logo and navbar links -->
+    <div class="relative z-30 lg:mx-20 flex justify-between items-center">
+            <div>
+                <a href="/home/index.html">
+                    <img class="my-5" src="/website/alu_logo.jpg" alt="ALU Logo" width="250px" height="250px">
+                </a>
+            </div>
+    
+            <div class="px-4 md:hidden cursor-pointer" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 172 172"
+                    style=" fill: #d00d2c">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
+                        <g fill="#d00d2c">
+                            <path
+                                d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+    
+            <!-- Navbar links section -->
+            <div class="hidden md:inline-block" id="navlinks">
+                <div class="sm:my-8 md:my-10 lg:my-12">
+                    <a href="/home/index.html" class="mr-5 md:mr-3 lg:mr-5 text-xs md:text-tiny lg:text-sm" id="links">HOME</a>
+                    <a href="#" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">THE ALU ADVANTAGE</a>
+                    <a href="/undergraduate/undergraduate.html" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">UNDERGRADUATE</a>
+                    <a href="/student-life/student-life.html" class="active m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">STUDENT LIFE</a>
+                    <a href="/about/about.html" class="ml-5 md:ml-3 md:mr-4 lg:ml-5 text-xs md:text-tiny lg:text-sm" id="links">ABOUT</a>
+                </div>
+            </div>
+    </div>
+
+    <!-- Creates a container to hold student created ALC video -->
+    <div class="relative w-full lg:h-screen bg-transparent lg:bg-black lg:bg-opacity-70">
+        <div class="w-3/6 h-auto lg:py-72 md:text-white invisible lg:visible">
+            <h1 class="mx-auto lg:mx-28 font-open items-center text-4xl lg:text-5xl font-bold">
+                STUDENT LIFE</h1><br>
+            <p class="mx-auto lg:mx-28 text-sm lg:text-xl">You don't just join a university when you enroll at ALU; you join a group of lifelong learners. There’s always an
+            opportunity to grow and have fun!</p>
+        </div>
+        <video class="lg:mix-blend-overlay absolute inset-0" src="/student-life/video/alc-video.MOV" autoplay muted loop></video>
+    </div>
+
+    <!-- Creates a container with to hold intro text -->
+    <p class="mx-10 lg:mx-72 mt-52 sm:mt-52 md:mt-96 lg:mt-56 font-open text-sm sm:text-xl md:text-xl lg:text-xl align-middle text-center">
+        "Learning at ALU extends beyond the classroom, be it rehearsing a play for the annual ArtsFest, leading the soccer team
+        during an ALU Alive #Move session, or gearing up to take center stage and host a community gathering. There’s always an
+        opportunity to grow and have fun!"
+    </p>
+
+    <!-- Creates a container with flex to hold ALU Vision info -->
+    <div class="mt-10 lg:mt-44 w-full h-full flex flex-wrap justify-between items-center">
+        <div class="m-auto w-auto lg:w-3/6">
+            <img class="m-auto h-96 sm:h-96 md:h-96 lg:w-5/6 lg:h-auto self-center rounded-full shadow-2xl" src="./images/vision.png" alt="Vision">
+        </div>
+
+        <div class="m-auto w-5/6 lg:w-3/6 self-center static">
+            <h1 class="mt-10 font-open text-center text-4xl lg:text-3xl font-bold">Vision</h1><br><br>
+            <p class="mx-auto lg:mx-28 text-sm lg:text-xl">Our vision is to enable our students to embark on a holistic journey in which they take charge and own their development and growth towards becoming well-rounded leaders at ALU and beyond.</p>
+        </div>        
+    </div>
+    
+    <!-- Creates a container with flex to hold ALU Mission Statement info -->
+    <div class="w-full h-screen flex flex-wrap justify-between items-center">
+        <div class="m-auto w-5/6 lg:w-3/6 self-center static">
+            <h1 class="mt-10 font-open text-center text-4xl lg:text-3xl font-bold">Mission</h1><br><br>
+            <p class="mx-auto lg:mx-28 text-sm lg:text-xl">Our mission is to empower students to co-design rigorous and high-quality services centered on student support and growth, keep the campus safe, well-run, and provide interaction and positive culture-building opportunities.</p>
+        </div>
+
+        <div class="m-auto w-auto lg:w-3/6">
+            <img class="h-80 sm:h-96 md:h-80 lg:w-5/6 lg:h-auto self-center rounded-full shadow-2xl" src="./images/mission.png"
+                alt="Mission">
+        </div>
+    </div>
+
+    <!-- Creates a container with to hold The Student Life Framework info and carousel -->
+    <div class="mt-10 mb-10 lg:mt-28 lg:mb-28 w-full h-auto">
+        <h1 class="mx-10 font-open text-center text-4xl lg:text-5xl font-bold">The Student Life Framework</h1>
+        <p class="mx-10 lg:mx-72 mt-20 lg:mt-28 font-open sm:text-xl md:text-xl lg:text-2xl align-middle text-center">
+            Student Life at ALU focuses on the holistic student experience and is built on a foundation of four pillars:
+            <b>Support, Development, Safety, and Culture</b>. All our offerings and programs draw from these pillars to ensure
+            that our students have a well-rounded, meaningful, and balanced university experience.
+        </p>
+        <div class="mt-28" id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5" checked>
+            <label for="s1" id="slide1">
+                <img src="/student-life/images/support.jpg" height="100%" width="100%">
+                <div class="image__overlay image__overlay--blur">
+                    <h1 class="mb-5 lg:mb-10 font-open text-center text-xl lg:text-7xl font-bold">Support</h1>
+                    <p class="mx-5 lg:mx-5 text-xs lg:text-xl lg:font-normal text-center">
+                        Ensuring holistic wellness in our community.<br>The Wellness and LEAP department are here to
+                        help.<br><br>#NOSTIGMA
+                    </p>
+                </div>
+            </label>
+            <label for="s2" id="slide2">
+                <img src="/student-life/images/safety.jpg" height="100%" width="100%">
+                <div class="image__overlay image__overlay--blur">
+                    <h1 class="mb-5 lg:mb-10 font-open text-center text-xl lg:text-7xl font-bold">Safety</h1>
+                    <p class="mx-5 lg:mx-5 text-xs lg:text-xl lg:font-normal text-center">
+                        Creating safe spaces for your emotional, social and physical wellbeing.<br>If you just need someone to talk to,
+                        the Wellness department is here to help.<br><br>#CULTUREofSAFETY
+                    </p>
+                </div>
+            </label>
+            <label for="s3" id="slide3">
+                <img src="/student-life/images/development.jpg" height="100%" width="100%">
+                <div class="image__overlay image__overlay--blur">
+                    <h1 class="mb-5 lg:mb-10 font-open text-center text-xl lg:text-7xl font-bold">Development</h1>
+                    <p class="mx-5 lg:mx-5 text-xs lg:text-xl lg:font-normal text-center">
+                        Increasing the capacity for sustainable Leadership Development. The Residential Advisors (RAs) and Housing
+                        Administrators (HAs) will assist here.<br><br>#GROWTH
+                    </p>
+                </div>
+            </label>
+            <label for="s4" id="slide4">
+                <img src="/student-life/images/culture.jpg" height="100%" width="100%">
+                <div class="image__overlay image__overlay--blur">
+                    <h1 class="mb-5 lg:mb-10 font-open text-center text-xl lg:text-7xl font-bold">Culture</h1>
+                    <p class="mx-5 lg:mx-5 text-xs lg:text-xl lg:font-normal text-center">
+                        Celebrating and harnessing everything that makes ALU a Pan-African
+                        community.<br><br>#UNIQUENESS<br>#DIVERSITY&INCLUSION<br>#VALUES
+                    </p>
+                </div>
+            </label>
+            <label for="s5" id="slide5">
+                <img src="/student-life/images/DSC_4746.jpg" height="100%" width="100%">
+            </label>
+        </div>
+    </div>
+
+    <div class="mt-40 mb-10 lg:mt-48 lg:mb-28 w-full h-auto">
+        <h1 class="mx-10 lg:mx-72 font-open text-center text-4xl lg:text-5xl font-bold">The Student Life Team invests in<br>
+            non-academic learning for students, contributing to the ALU 21st Century Skills objective.
+        </h1>
+        <p class="mx-10 lg:mx-72 mt-20 lg:mt-28 font-open sm:text-xl md:text-xl lg:text-2xl align-middle text-center">As an ALU student, you have access to training &
+            coaching sessions and upskilling programmes through the team. These sessions aim to help you develop the
+            ability to self-regulate (organize & manage your resources & responsibilities) and work efficiently. ALU
+            hosts a series of activities designed to foster community and showcase students’ diverse and exceptional
+            talent. Monthly community lunches, assemblies, and annual student-run activities like ArtsFest and Wellness
+            Week - all held during the academic year.
+        </P>
+    </div>
+
+    <div class="mt-40 lg:mt-48 w-full h-auto">
+        <h1 class="mx-10 lg:mx-0 font-open text-center text-4xl lg:text-5xl font-bold">A Day in The Life of An ALU Student</h1>
+        <img class="mx-auto mt-20 w-auto h-auto" src="/student-life/images/alu-student-day.jpg" alt="A Day in The Life of An ALU Student">
+        <p class="mx-10 lg:mx-48 mt-20 font-open sm:text-xl md:text-xl lg:text-2xl align-middle text-center">In today’s highly competitive market, the need for professionals with strong interpersonal & social skills is crucial
+        and provides a distinct competitive edge. As a result, the Student Life Team has set out to make all avenues accessible
+        to help in practical readiness, thus fulfilling these demands and within selected places to serve within your community.
+        With that said, ready to get started?
+        </P>
+        <div class="mt-16 px-5/6 pb-40 lg:pb-60 w-auto h-auto flex justify-center">
+            <a href="https://www.alueducation.com/admissions/undergraduate-admissions/"><button class="text-white font-bold w-auto py-4 px-4" id="button">Begin Your Application</button></a>
+        </div>
+    </div>
+    </main>
+
+    <!-- This is used to create the parallax scroll on the footer. Courtesy of https://medium.com/swlh/how-to-responsive-parallax-footer-bc3ccb3ce8f1 -->
+    <div id="placeholder"></div>
+    
+    <!-- Footer -->
+    <div class="mt-0 lg:mt-28 w-full overflow-hidden grid grid-cols-3 grid-rows-1 items-center" id="footer">
+        <div class="grid grid-rows-1 col-span-3">
+            <a href="/home/index.html">
+                <img class="sm:hidden mx-auto w-72 h-auto" src="/website/alu_logo.jpg" alt="ALU Logo">
+            </a>
+        </div>
+    
+        <!-- ALU mission column -->
+        <div>
+            <a href="/home/index.html">
+                <img class="invisible sm:visible mx-auto" src="/website/alu_logo.jpg" alt="ALU Logo" width="350px"
+                    height="350px">
+            </a>
+            <p class="text-white ml-2 sm:mx-4 lg:mx-14 text-xs lg:text-base text-justify">
+                By 2035, ALU aims to train three million ethical and entrepreneurial leaders for Africa and the rest of the
+                world. It
+                employs a personalized, student-driven, project-based, and mission-oriented approach to creating agile,
+                lifelong
+                learners capable of adapting to a changing world.
+            </p>
+            <div class="mt-6 text-white ml-2 font-bold text-xs sm:text-xs md:text-sm lg:text-lg text-center">Follow ALU on
+                Social Media</div>
+            <div class="mx-3 sm:mx-5 md:mx-11 lg:mx-28 my-4 w-36 sm:w-72">
+                <a href="https://facebook.com/alu.education"><span id="social"
+                        class="mx-3 sm:mx-1 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-facebook"></i></span></a>
+                <a href="https://www.instagram.com/alueducation/"><span id="social"
+                        class="mx-1 sm:mx-3 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-instagram"></i></span></a>
+                <a href="https://twitter.com/alueducation"><span id="social"
+                        class="mx-3 sm:mx-1 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-twitter"></i></span></a>
+                <a href="https://www.youtube.com/channel/UChgb00MsGJt8-Dnjz8IUC6w"><span id="social"
+                        class="mx-1 sm:mx-3 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i
+                            class="fa fa-youtube"></i></span></a>
+            </div>
+        </div>
+    
+        <!-- Quick links column -->
+        <div class="text-white">
+            <table class="table-auto sm:m-auto">
+                <thead>
+                    <tr>
+                        <th class="font-bold text-sm lg:text-xl">QUICK LINKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="/about/about.html">About</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="#">The
+                                ALU Advantage</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Admissions</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Undergraduate</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Computing</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Accessibility</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdab1rkqS_1Ofd-n0jAAF7yzSDRdM0VTUIcfDPCl1tLwc0x-w/viewform?usp=pp_url">Report
+                                a Concern</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="/website/maps.html">Maps & Directions</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Policies</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a
+                                href="#">Privacy & Security</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Contact column -->
+        <div class="text-white sm:pb-7">
+            <table class="table-auto lg:w-20">
+                <thead class="text-left">
+                    <tr>
+                        <th class="font-bold text-sm lg:text-xl">CONTACT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">ALC Mauritius<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm">African Leadership Campus,<br>Powder
+                                Mill Rd,<br>Pamplemousses, 21001,<br>Mauritius</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">ALU Rwanda<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm">Bumbogo,<br>Kigali Innovation
+                                City,<br>Rwanda</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Admissions<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="mailto:admissions@alueducation.com">admissions@alueducation.com</a><br><a
+                                    href="tel://+23054447827">+230 5444 7827</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">General Inquiries<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="mailto:info@alueducation.com">info@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Media Inquiries<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="marketing@alueducation.com">marketing@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Front Desk<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a href="tel://+23054434951">Mauritius:
+                                    +230 5443 4951</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Careers<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a
+                                    href="hiring@alueducation.com">hiring@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Copyright -->
+        <div
+            class="sm:mx-0 md:mx-5 lg:mx-14 pt-5 pb-5 col-span-3 grid grid-cols-6 text-white bg-transparent border-t-2 border-white text-sm text-center">
+            <div class="sm:mx-0 md:mx-5 lg:mx-12 col-span-6 grid grid-cols-6 text-xs md:text-xs lg:text-sm">
+                <p class="col-span-3 sm:col-span-3 md:col-span-2 lg:col-span-1">© 2021 <b>ALU</b>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src='/website/index.js'></script>
+</body>
+
+</html>

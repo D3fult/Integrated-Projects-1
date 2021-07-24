@@ -1,0 +1,81 @@
+#main,
+.placeholder {
+  position: relative;
+}
+
+#main {
+  z-index: 10;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+#links:hover {
+  color: #d00d2c;
+}
+
+#placeholder {
+  z-index: 1;
+  height: 100vh;
+}
+
+#parallax {
+  background-image: url("/home/images/old-campus-banner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#social {
+  color: #d00d2c;
+  transition: all 0.4s ease;
+}
+
+#social:hover {
+  color: #ffffff;
+}
+
+#links {
+  transition: all 0.4s ease;
+}
+
+#links:hover {
+  color: #d00d2c;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  background-color: /* #002f6c */ #0f2a5f;
+  overflow: hidden;
+  background-image: url("/home/images/alu-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 160% 54%;
+}
+
+/* small screen (mobile) */
+@media (min-width: 500px) {
+  #footer {
+    background-size: 0%;
+  }
+}
+
+/* medium screen (tablet) */
+@media (min-width: 768px) {
+  #footer {
+    background-size: 50%;
+    background-position: 140% 190%;
+  }
+}
+
+/* large screen (laptop) */
+@media (min-width: 1024px) {
+  #footer {
+    background-size: 60%;
+    background-position: 160% 54%;
+  }
+}

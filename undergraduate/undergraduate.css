@@ -1,0 +1,104 @@
+#alu-night {
+  width: 600px;
+  height: 600px;
+}
+
+/* small screen (mobile) */
+@media (min-width: 500px) {
+  #alu-night {
+    margin: 0px 45px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* medium screen (tablet) */
+@media (min-width: 768px) {
+  #alu-night {
+    margin: 0px 45px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* large screen (laptop) */
+@media (min-width: 1024px) {
+  #alu-night {
+    width: 600px;
+    height: 600px;
+  }
+
+  .child2 p {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+.child2 {
+  flex: 1;
+}
+
+.container2 {
+  margin: 7rem 0px 0px 0px;
+  background-image: url("./images/alu-pattern.svg");
+  background-size: 4%;
+  background-position: center;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  .container {
+    flex-direction: column;
+  }
+  .child2 {
+    align-items: center;
+    justify-content: center;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  .child2 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* The inclusion of the css styling for the grid elements was from https://youtu.be/BP1S_gaotCk
+*Title: Responsive food website using HTML and CSS | Create Responsive website using grid in CSS
+*Author: Easy Html Learner
+*Availability: https://youtu.be/BP1S_gaotCk
+Variables were edited to serve my purpose. */
+
+.map {
+  margin: 0px 0px;
+  width: 37rem;
+  height: auto;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.map:hover {
+  transform: scale(1.04);
+}
+
+/* small screen (mobile) */
+@media (min-width: 500px) {
+  .map {
+    margin: 0px 27px;
+    width: 27rem;
+  }
+}
+
+/* medium screen (tablet) */
+@media (min-width: 768px) {
+  .map {
+    margin: 9rem;
+    width: 30rem;
+  }
+}
+
+/* large screen (laptop) */
+@media (min-width: 1024px) {
+  .map {
+    margin: initial;
+    width: 37rem;
+  }
+}
