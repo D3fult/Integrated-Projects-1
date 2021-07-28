@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Leadership University</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/website/index.css">
+</head>
+
+<body>
+    <main class="bg-white" id="main">
+    <!-- Creates a container with flex to hold the logo and navbar links -->
+    <div class="relative z-30 lg:mx-20 flex justify-between items-center">
+        <div>
+            <a href="./index.html">
+                <img class="my-5" src="/website/alu_logo.jpg" alt="ALU Logo" width="250px" height="250px">
+            </a>
+        </div>
+
+        <div class="px-4 md:hidden cursor-pointer" id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 172 172"
+                style=" fill: #d00d2c">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
+                    <g fill="#d00d2c">
+                        <path
+                            d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <!-- Navbar links section -->
+        <div class="hidden md:inline-block" id="navlinks">
+            <div class="sm:my-8 md:my-10 lg:my-12">
+                <a href="./index.html" class="active mr-5 md:mr-3 lg:mr-5 text-xs md:text-tiny lg:text-sm" id="links">HOME</a>
+                <a href="#" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">THE ALU ADVANTAGE</a>
+                <a href="/undergraduate/undergraduate.html" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">UNDERGRADUATE</a>
+                <a href="/student-life/student-life.html" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">STUDENT LIFE</a>
+                <a href="/about/about.html" class="ml-5 md:ml-3 md:mr-4 lg:ml-5 text-xs md:text-tiny lg:text-sm" id="links">ABOUT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creates a container to hold old ALC campus image -->
+    <div>
+        <img class="lg:w-screen lg:h-screen md:w-screen md:h-1/6" id="parallax"> <!-- Put this (src="home_images/old-campus-banner.jpg" alt="Mauritus Campus") in-between 'class' and 'id' to disable parallax effect -->
+    </div>
+    
+    <!-- Creates a container with flex to hold ALU Advantage image -->
+    <div class="mt-10 lg:mt-28 w-full h-screen flex flex-wrap justify-between items-center">
+        <h1 class="font-open font-extrabold w-auto lg:w-3/6 text-7xl sm:text-6xl md:text-7xl lg:text-9xl text-center self-center">This Is What We Bring To The Table</h1>
+        <img class="mx-auto h-auto md:h-5/6 lg:h-5/6 self-center drop-shadow-2xl" src="./images/alu-advantage.png" alt="ALU Advantage">
+    </div>
+    
+    <!-- Creates a container with flex to hold Fred's image -->
+    <div class="mt-10 lg:mt-28 w-full h-auto lg:h-screen flex flex-wrap justify-between items-center">
+        <div class="mt-10 w-full lg:w-3/6 items-center self-center">
+            <img class="mx-auto h-96 md:h-96 lg:w-full lg:h-auto rounded-full relative lg:-left-1/4 shadow-2xl" src="./images/Fred.png" alt="Fred Swaniker">
+        </div>
+
+        <div class="mx-10 my-10 lg:mx-0 lg:my-0 w-auto lg:w-3/6 self-center">
+            <h1 class="font-open text-center text-4xl lg:text-5xl font-bold">From Our Founder</h1><br><br>
+            <p class="mx-auto lg:mx-28 text-sm lg:text-xl">Everyone’s different — including you. That’s why at ALU, we don’t do “one size fits all” education. ALU’s Leadership Core
+            program and the first year of real work experience will prepare you for our unique approach to individualized learning.<br><br>We build the skills that you, as a young leader and entrepreneur will need for the future. Harness the characteristics
+            essential for creating a mission-based life of impact and purpose.<br><br>All ALU students develop 21st-century skills and
+            network that will remain relevant amidst rapid global change. Want to guide that change? With the right education, you
+            can.</p>
+        </div>
+    </div>
+
+    <!-- Creates a container to hold the "Our Locations" header -->
+    <div class="mt-10 mb-10 lg:mt-28 lg:mb-28 w-full h-auto">
+        <h1 class="font-open text-center text-4xl lg:text-5xl font-bold">Our Locations</h1>
+    </div>
+    
+    <!-- Creates a container with flex to hold Mauritius info -->
+    <div class="w-full h-screen flex flex-wrap justify-between items-center">
+        <div class="m-auto w-5/6 lg:w-3/6 self-center static">
+            <h1 class="font-open text-center text-4xl lg:text-3xl font-bold">Mauritius</h1><br><br>
+            <p class="mx-auto lg:mx-28 text-sm lg:text-xl">ALC's main campus was established in early 2018 in Pamplemousses, Mauritius' northern region, midway between the capital
+            city, Port Louis, and the lively expat district of Grand Baie.<br><br>Our students may immerse themselves in a diverse culture with historical roots in Asia, Africa, and Europe, all while
+            living on a tropical island that is frequently recognized as one of Africa’s safest and most education-driven countries.</p>
+        </div>
+
+        <div class="m-auto w-auto lg:w-3/6">
+            <img class="h-96 sm:h-96 md:h-96 lg:h-auto self-center" src="./images/flagmap_Mauritius.png" alt="Outline Flag of Mauritius">
+        </div>
+    </div>
+
+    <!-- Creates a container with flex to hold Rwanda info -->
+    <div class="w-full h-screen flex flex-wrap justify-between items-center">
+        <div class="m-auto w-auto lg:w-3/6">
+            <img class="h-80 sm:h-96 md:h-80 lg:h-auto self-center" src="./images/flagmap_Rwanda.png"
+                alt="Outline Flag of Rwanda">
+        </div>
+
+        <div class="m-auto w-5/6 lg:w-3/6 self-center static">
+            <h1 class="font-open text-center text-4xl lg:text-3xl font-bold">Rwanda</h1><br><br>
+            <p class="mx-auto lg:mx-28 text-sm lg:text-xl">The new ALU campus is located in Bumbogo, Kigali Innovation City, poised to become Africa's centre of excellence in
+            education. Kigali City, Rwanda's capital, is a vibrant and well-organised city boasting a diverse community. Hosting
+            various restaurants, bars, clubs, sports clubs, and cafés, Kigali offers limitless entertainment for ALU students.<br><br>The campus has three buildings with two floors each — Social Commons, Enterprise Commons, and Learning Commons, joined
+            by a covered pathway called “Collab Street.” With a 6,500 sqm built area, the campus has 21 classrooms and pods
+            distributed across the campus for peer and self-work.</p>
+        </div>
+    </div>
+
+    <!-- Creates a container to hold the "Discover Our University" header -->
+    <div class="mt-10 mb-10 lg:mt-28 lg:mb-28 w-full h-auto">
+        <h1 class="font-open text-center text-4xl lg:text-5xl font-bold">Discover Our University</h1>
+    </div>
+
+    <!-- Creates a container with flex to hold ALU videos -->
+    <div class="mx-auto lg:mx-28 pb-40 lg:pb-60 flex flex-wrap justify-between">
+        <iframe class="md:mx-auto shadow-2xl" width="559" height="402" src="https://www.youtube.com/embed/WIH1W9z_5Fs" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <iframe class="md:mx-auto shadow-2xl" width="559" height="402" src="https://www.youtube.com/embed/svYwWaNv8rg" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </div>
+    </main>
+
+    <!-- This is used to create the parallax scroll on the footer. Courtesy of https://medium.com/swlh/how-to-responsive-parallax-footer-bc3ccb3ce8f1 -->
+    <div id="placeholder"></div>
+
+    <!-- Footer -->
+    <div class="mt-0 lg:mt-28 w-full overflow-hidden grid grid-cols-3 grid-rows-1 items-center" id="footer">
+        <div class="grid grid-rows-1 col-span-3">
+            <a href="index.html">
+                <img class="sm:hidden mx-auto w-72 h-auto" src="/website/alu_logo.jpg" alt="ALU Logo">
+            </a>
+        </div>
+        
+        <!-- ALU mission column -->
+        <div>
+            <a href="index.html">
+                <img class="invisible sm:visible mx-auto" src="/website/alu_logo.jpg" alt="ALU Logo" width="350px" height="350px">
+            </a>
+            <p class="text-white ml-2 sm:mx-4 lg:mx-14 text-xs lg:text-base text-justify">
+                By 2035, ALU aims to train three million ethical and entrepreneurial leaders for Africa and the rest of the world. It
+                employs a personalized, student-driven, project-based, and mission-oriented approach to creating agile, lifelong
+                learners capable of adapting to a changing world.
+            </p>
+            <div class="mt-6 text-white ml-2 font-bold text-xs sm:text-xs md:text-sm lg:text-lg text-center">Follow ALU on Social Media</div>
+            <div class="mx-3 sm:mx-5 md:mx-11 lg:mx-28 my-4 w-36 sm:w-72">
+                <a href="https://facebook.com/alu.education"><span id="social" class="mx-3 sm:mx-1 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i class="fa fa-facebook"></i></span></a>
+                <a href="https://www.instagram.com/alueducation/"><span id="social" class="mx-1 sm:mx-3 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i class="fa fa-instagram"></i></span></a>
+                <a href="https://twitter.com/alueducation"><span id="social" class="mx-3 sm:mx-1 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i class="fa fa-twitter"></i></span></a>
+                <a href="https://www.youtube.com/channel/UChgb00MsGJt8-Dnjz8IUC6w"><span id="social" class="mx-1 sm:mx-3 md:mx-3 lg:mx-4 sm:text-xl md:text-2xl lg:text-4xl"><i class="fa fa-youtube"></i></span></a>
+            </div>
+        </div>
+
+        <!-- Quick links column -->
+        <div class="text-white">
+            <table class="table-auto sm:m-auto">
+                <thead>
+                    <tr>
+                        <th class="font-bold text-sm lg:text-xl">QUICK LINKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="/about/about.html">About</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="#">The ALU Advantage</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="#">Admissions</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="/undergraduate/undergraduate.html">Undergraduate</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="#">Computing</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="#">Accessibility</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdab1rkqS_1Ofd-n0jAAF7yzSDRdM0VTUIcfDPCl1tLwc0x-w/viewform?usp=pp_url">Report a Concern</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="/website/maps.html">Maps & Directions</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="#">Policies</a></td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pl-6 lg:pl-5 font-medium text-xs sm:text-sm lg:text-base" id="links"><a href="#">Privacy & Security</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Contact column -->
+        <div class="text-white sm:pb-7">
+            <table class="table-auto lg:w-20">
+                <thead class="text-left">
+                    <tr>
+                        <th class="font-bold text-sm lg:text-xl">CONTACT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">ALC Mauritius<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm">African Leadership Campus,<br>Powder Mill Rd,<br>Pamplemousses, 21001,<br>Mauritius</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">ALU Rwanda<br>
+                        <div class="font-light text-gray-300 text-xs lg:text-sm">Bumbogo,<br>Kigali Innovation City,<br>Rwanda</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Admissions<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a href="mailto:admissions@alueducation.com">admissions@alueducation.com</a><br><a href="tel://+23054447827">+230 5444 7827</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">General Inquiries<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a href="mailto:info@alueducation.com">info@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Media Inquiries<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a href="marketing@alueducation.com">marketing@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Front Desk<br>
+                            <div class="font-light text-gray-300 text-xs lg:text-sm"><a href="tel://+23054434951">Mauritius: +230 5443 4951</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 font-medium text-xs sm:text-sm lg:text-base">Careers<br>
+                        <div class="font-light text-gray-300 text-xs lg:text-sm"><a href="hiring@alueducation.com">hiring@alueducation.com</a></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Copyright -->
+        <div class="sm:mx-0 md:mx-5 lg:mx-14 pt-5 pb-5 col-span-3 grid grid-cols-6 text-white bg-transparent border-t-2 border-white text-sm text-center">
+                <div class="sm:mx-0 md:mx-5 lg:mx-12 col-span-6 grid grid-cols-6 text-xs md:text-xs lg:text-sm">
+                    <p class="col-span-3 sm:col-span-3 md:col-span-2 lg:col-span-1">© 2021 <b>ALU</b>. All Rights Reserved.</p>
+                    <!-- <a href="#" id="links">Accessibility</a>
+                    <a href="#" id="links">Report a Concern</a>
+                    <a href="maps.html" id="links">Maps & Driections</a>
+                    <a href="#" id="links">Policies</a>
+                    <a href="#" id="links">Privacy & Security</a> -->
+                </div>
+        </div>
+    </div>
+
+    <script src='/website/index.js'></script>
+</body>
+</html>
