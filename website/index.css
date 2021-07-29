@@ -51,7 +51,7 @@
   height: 100vh;
   background-color: /* #002f6c */ #0f2a5f;
   overflow: hidden;
-  background-image: url("/home/images/alu-pattern.svg");
+  background-image: url("/images/alu-pattern.svg");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 160% 54%;
