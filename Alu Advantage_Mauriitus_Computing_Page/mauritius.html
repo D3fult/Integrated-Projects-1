@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Mauritius Campus</title>
+      </head>
+<body>
+     <!--Navigation-->
+     <nav class="flex-grow items-center">
+      
+            <!--Logo-->
+            <div class=" float-left" id="logo">
+            <img class="mt-2 mx-auto" src="./images/Logo.jpg" alt="Logo" width="200px" height="200px" />
+            </div>
+            <!--Page menu-->
+            <div class="float-right ">
+            <ul class="hidden md:block flex-shrink">
+                <!--Possible tailwind code 'float-left flex items-center text-l space-x-6 mx-6 whitespace-nowrap '-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">The Alu Advantage</a></li>
+                <li><a href="#">Undergraduate</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            </div>
+            <!--NOTE: FINISH THE RESPONSIVE SMALL SCREEN NAVBAR-->
+            <!--Small Screen-->
+            <!--Menu Icon Small screen-->
+            <div class="float-right md:hidden relative pr-4" >
+                <button class=" hover:bg-gray-900 rounded-md hover:text-white px-1 my-5 nav-toggler focus:outline-none" id="menuIcon"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                </button>
+            </div>
+            <!--Sm NavLinks-->
+                <div class=" hidden z-10 bg-gray-900 w-full absolute mt-20 rounded" id="navSm" >
+                <div class="w-full">
+    
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="index.html"> <span>Home</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>The Alu Advantage</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="computing.html"> <span>Undergraduate</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Student Life</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>About</span></a></div>
+                </div>
+                </div>
+            </div>
+         </nav>
+    <main>
+        <!--Video-->
+        <!-- object-contain -->
+        <section>
+            
+            <video class=" h-auto w-full" src="./campus_vid.mp4" autoplay muted loop>
+            </video>  
+                            
+         <div class=" mx-6 h-auto font-bold text-white w-auto" id="overlay_txt">
+                    <h1 class="text-md md:text-2xl lg:text-4xl">MAURITIUS CAMPUS</h1> 
+                    <p class="text-xs md:text-xl lg:text-2xl"> ALU’s inaugural campus is known as African Leadership College (ALC) in Mauritius. ALC offers accredited Undergraduate Degree Programmes through its founding academic partner, Glasgow Caledonian University.</p>
+                </div>       
+        </section>
+        <!--Description-->
+        <section class="bg-gray-200">
+            <div  class="mx-10 mt-2 p-3">
+            <p class="text-xl"><b>#TheIslandIsMyCampus</b> <br /> <br />
+                The campus opened its doors to its first class of students in <b>October 2015</b> with 173 students in the inaugural class of 2015. Today we have over 300 students. <br /> <br />
+                ALC's main campus was established in early 2018 in Pamplemousses, Mauritius' northern region, midway between the capital city, Port Louis, and the lively expat district of Grand Baie.<br /> <br />
+                Our students may immerse themselves in a diverse culture with historical roots in Asia, Africa, and Europe, all while living on a tropical island that is frequently recognized as one of Africa’s safest and most education-driven countries.</p>
+            </div>
+     </section>
+        <!--Academics-->
+        <section class="grid grid-cols-1 gap-3 sm:grid-cols-2 my-2 mx-2 sm:gap-2">
+            <div>
+                <img class="rounded w-auto h-auto" src="./images/campus_img.jpg">
+            </div>
+            <div class="md:my-auto md:px-4">
+                <div class="flex justify-center ">
+                <h1 class="font-bold text-xl sm:text-2xl md:text-4xl">Academics</h1>
+                </div>
+                <p class="sm:text-lg">ALC offers undergraduate degree programmes through our founding academic partner, Glasgow Caledonian University. Our degree programme has been carefully selected to around what we believe are Africa’s greatest opportunities and grand challenges.<br /> 
+                    <b>Visit our B.A (Hons) Computing Degree</b></p>
+            </div>
+        </section>
+        <!--Policies-->
+                <section class="bg-gradient-to-b from-gray-200 to-white">
+                    <header class="flex justify-center text-2xl  md:text-4xl bg-blue-800 text-white font-bold my-2 ">Policies</header>
+                    <div>
+                        <table class="hidden sm:block table-auto  mx-2 ">
+                            <thead>
+                            <thead><th class="border border-gray-500 text-2xl text-blue-800 bg-gray-300">Policy Name</th> <th class="bg-gray-300 border border-gray-500 text-2xl text-blue-800">Description</th> </thead>
+                    
+                            <tbody>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Student Handbook</td> <td class="border border-gray-500 p-2">Provides in-depth information about our academic programmes, academic community and learning environment.</td> <td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1QnvDnPTg6DmwDqhucXoS_WzwJg8uwo2Aq5QuUtgV_lI/edit">Link</a></td></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Data Protection Policy</td> <td class="border border-gray-500 p-2">Establishes general standards for all members of the academic community at ALC in terms of Health and Safety.</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1BL1MyL80I3u4x1xblEWAbI-6bzKXBJ6txL6Cz5mEb7s/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Health and Safety Policy</td> <td class=" border border-gray-500 p-2">Describes the internal quality management system that forms a cycle for continuous improvement and contributes to the accountability of both ALU campuses.</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1FesdY9IM3QeWkyN-gxKiij1fk9bo8Re9osBV4HzFmCo/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Student Attendance Policy</td> <td class="  border border-gray-500 p-2">Describes the institutional policy and expectations with regards to students attendance, the actions in case of breaches, as well as the responsibilities of students, academic and non-academic staff, as well as institution administration regarding student attendance.</td><td class="border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1nw3Ezfg5kHnxmF5S4pXVYhXaxfZu5CzsNy83n6k3S7s/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Credit Transfer Policy and Procedure</td> <td class=" border border-gray-500 p-2">Sets out the guidelines and procedures for recognition and transfer of credits into ALU.</td><td class="  border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1yI4sxboRP8o0B48yUIZoBEcsDunySLCFZMDbaUXcnpg/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Student Code of Conduct</td> <td class=" border border-gray-500 p-2">Defines the conduct expectations for students at ALU</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/14tOfmgbTUnfJtkn_kZTSDY5Xr2qNadRym2aPEAwSPK4/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Student Disciplinary Policy and Procedure</td> <td class=" border border-gray-500 p-2">Sets the policy and procedures adopted by ALU with the scope of safeguarding the adherence to the principles of its community, to its regulations, as well as to the Student Code of Conduct</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1cqcvx2B0M97rgR-QrN-teXxL_4tqXnoPBIiImM0-u4c/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Student Finance Policy</td> <td class=" border border-gray-500 p-2">Sets out the finance policy associated with full-time undergraduate programs at ALU</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1JE_Iy8O8ZDbL8RVkIY59iTvEAltw4AHw_2wsChjoSNc/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">Policy and Procedures for Admissions</td> <td class=" border border-gray-500 p-2">Provides the policy and procedures for admissions in the undergraduate programs at ALU</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1kYmBSMQ_l1v0aRCtu1HwwJAgmgmsf3o767S-3Xes9nk/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">ALC Internship Policy</td> <td class=" border border-gray-500 p-2">Guides and provides direction to the management of all ALC internships.</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1vvctxTv5IPjHqQESaiCS2HYTh03kfET6xXtfqVN0yfk/edit?usp=sharing">Link</a></td></tr></tr>
+                                <tr><td class="border border-gray-500 p-2 font-bold text-xl bg-red-800 text-white">ALC Library policy and procedures</td> <td class=" border border-gray-500 p-2">Maximize access to library holdings for the ALC community</td><td class=" border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1JWTT-yaVq8mZeGDDVPrhs4KV-dUKhb36MpISCIlWSRQ/edit?usp=sharing">Link</a></td></tr></tr>
+                            </tbody>
+                           
+                        </table> 
+                        <table class="sm:hidden table-auto mx-auto mx-2 lg:mx-2">
+                            <thead>
+                            <thead><th class=" text-2xl border border-gray-500">Policy Name</th>
+                    
+                            <tbody>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1QnvDnPTg6DmwDqhucXoS_WzwJg8uwo2Aq5QuUtgV_lI/edit">Student Handbook</a></td></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1BL1MyL80I3u4x1xblEWAbI-6bzKXBJ6txL6Cz5mEb7s/edit?usp=sharing">Data Protection Policy</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1FesdY9IM3QeWkyN-gxKiij1fk9bo8Re9osBV4HzFmCo/edit?usp=sharing">Health and Safety Policy</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1nw3Ezfg5kHnxmF5S4pXVYhXaxfZu5CzsNy83n6k3S7s/edit?usp=sharing">Student Attendance Policy</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1yI4sxboRP8o0B48yUIZoBEcsDunySLCFZMDbaUXcnpg/edit?usp=sharing">Credit Transfer Policy and Procedure</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/14tOfmgbTUnfJtkn_kZTSDY5Xr2qNadRym2aPEAwSPK4/edit?usp=sharing">Student Code of Conduct</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1cqcvx2B0M97rgR-QrN-teXxL_4tqXnoPBIiImM0-u4c/edit?usp=sharing">Student Disciplinary Policy and Procedure</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1JE_Iy8O8ZDbL8RVkIY59iTvEAltw4AHw_2wsChjoSNc/edit?usp=sharing">Student Finance Policy</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1kYmBSMQ_l1v0aRCtu1HwwJAgmgmsf3o767S-3Xes9nk/edit?usp=sharing">Policy and Procedures for Admissions</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1vvctxTv5IPjHqQESaiCS2HYTh03kfET6xXtfqVN0yfk/edit?usp=sharing">ALC Internship Policy</a></td></tr></tr>
+                                <tr> <td class=" flex justify-center text-xl border border-gray-500 text-red-700 font-bold p-2"><a  href="https://docs.google.com/document/d/1JWTT-yaVq8mZeGDDVPrhs4KV-dUKhb36MpISCIlWSRQ/edit?usp=sharing">ALC Library policy and procedures</a></td></tr></tr>
+                            </tbody>
+                           
+                        </table> 
+                    </div>
+                </section>
+            
+</main>
+
+</body>
+</html>

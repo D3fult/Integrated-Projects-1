@@ -1,0 +1,64 @@
+nav ul {
+  list-style-type: none;
+  display: block;
+  align-items: flex-end;
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+nav ul li {
+  align-items: center;
+  padding: 15px;
+  flex-grow: 100%;
+  float: left;
+}
+nav ul li:hover {
+  text-decoration: underline;
+}
+#logo {
+  padding-left: 30px;
+}
+.advantage_img_1 {
+  overflow: hidden;
+  align-items: center;
+}
+#overlay_txt {
+  position: absolute;
+  top: 50vh;
+}
+#academic_director{
+
+  height: 625px;
+  width: 625px;
+
+}
+@media (min-width: 768px) {
+  #overlay_txt {
+    position: absolute;
+    top: 50vh;
+  }
+}
+@media (min-width: 1024px) {
+  #overlay_txt {
+    position: absolute;
+    top: 80vh;
+  }
+}
+@media (max-width: 375px) {
+  #overlay_txt{
+    position: absolute;
+    top:20vh;
+  }
+}
+@media (max-width:600px){
+#overlay_txt{
+  position: absolute;
+  top:30vh;
+}
+}
+@media (max-width: 768px) {
+ #academic_director{
+   height: 400px;
+   width: 400px;
+ }
+}

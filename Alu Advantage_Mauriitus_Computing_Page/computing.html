@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./computing_page/computing.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/02dd437eab.js" crossorigin="anonymous" defer></script>
+    <script id="dsq-count-scr" src="//alu-disqus-com.disqus.com/count.js" async></script>
+    <title>ALU Computing</title>
+</head>
+<body>
+    <!--Navigation-->
+    <div class="flex">
+    <nav class="flex-grow items-center">
+      
+        <!--Logo-->
+        <div class=" float-left" id="logo">
+        <img class="mt-2 mx-auto" src="./images/Logo.jpg" alt="Logo" width="200px" height="200px" />
+        </div>
+        <!--Page menu-->
+        <div class="float-right ">
+        <ul class="hidden md:block flex-shrink">
+            <!--Possible tailwind code 'float-left flex items-center text-l space-x-6 mx-6 whitespace-nowrap '-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">The Alu Advantage</a></li>
+            <li><a href="#">Undergraduate</a></li>
+            <li><a href="#">Student Life</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        </div>
+        <!--NOTE: FINISH THE RESPONSIVE SMALL SCREEN NAVBAR-->
+        <!--Small Screen-->
+        <!--Menu Icon Small screen-->
+        <div class="float-right md:hidden relative pr-4" >
+            <button class=" hover:bg-gray-900 rounded-md hover:text-white px-1 my-5 nav-toggler focus:outline-none" id="menuIcon"> 
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+            </svg>
+            </button>
+        </div>
+        <!--Sm NavLinks-->
+            <div class=" hidden z-10 bg-gray-900 w-full absolute mt-20 rounded" id="navSm" >
+            <div class="w-full">
+
+                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="index.html"> <span>Home</span></a></div>
+                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>The Alu Advantage</span></a></div>
+                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="computing.html"> <span>Undergraduate</span></a></div>
+                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Student Life</span></a></div>
+                <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>About</span></a></div>
+            </div>
+            </div>
+        </nav>
+     </div>
+    </div>
+     <main>
+         <!-- Heading -->
+        <div  class= "text-center text-2xl md:text-4xl w-full">
+            <i class="fas fa-code"></i>
+            <h2 class="font-bold text-2xl md:text-4xl">Hello World!</h2>
+        </div>
+      <!-- Academic Head-->
+       <div class="mt-10 lg:mt-28 w-full h-auto flex flex-wrap justify-between items-center">
+        <div class="mt-10 w-full lg:w-3/6 items-center self-center">
+        <img class="mx-auto h-96 md:h-96 lg:w-full lg:-left-10 lg:h-auto rounded-full relative shadow-2xl" src="./computing_page/computing_images/stephen1.jpg" alt="ALC Academic Director">
+       </div>
+       <div class="mx-10 my-10 lg:mx-0 lg:my-0 w-auto lg:w-3/6 self-center">
+        <h1 class="font-open text-center text-4xl lg:text-5xl font-bold">Stephen Naicken</h1>
+        <P class="text-center text-xl lg:text-xl font-light">Academic Director</P><br><br>
+        <p class="mx-auto lg:mx-28 text-sm lg:text-xl">Everyone’s different — including you. That’s why at ALU, we don’t do “one size fits all” education. ALU’s Leadership Core
+        program and the first year of real work experience will prepare you for our unique approach to individualized learning.<br><br>We build the skills that you, as a young leader and entrepreneur will need for the future. Harness the characteristics
+        essential for creating a mission-based life of impact and purpose. All ALU students develop 21st-century skills and
+        network that will remain relevant amidst rapid global change. Want to guide that change? With the right education, you
+        can.</p>
+       </div>
+      </div>
+      
+       <!--Syllabus for all years-->
+        <div class="w-full" id="Syllabus">
+            <h1 class="font-open text-black text-center md:p-2 text-2xl lg:text-3xl font-bold">What to Expect</h1>
+    <!-- Year 1 -->
+             <h1 class="text-center text-2xl lg:text-3xl font-bold border-b-2 border-black">YEAR 1</h1>
+            
+             <div class="grid md:grid-cols-3 md:gap-4 md:mx-24 grid-cols-1 gap-2 my-2 ">
+                
+                <div class="w-auto h-auto p-3 hover:shadow-2xl rounded-md mx-auto">
+                    <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 1</h1>
+                    <p class="pt-3 lg:pt-4 text-sm lg:text-lg text-center">Leadership Core</p>
+                </div>
+            
+                <div class="w-auto h-auto p-3 hover:shadow-2xl rounded-md mx-auto">
+                    <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 2</h1>
+                    <p class="pt-3 lg:pt-4 text-sm lg:text-lg text-center">Leadership Core</p>
+                </div>
+            
+                <div class="w-auto h-auto p-3 hover:shadow-2xl rounded-md mx-auto">
+                    <h1 class=" text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 3</h1>
+                    <p class="pt-3 lg:pt-4 text-sm lg:text-lg text-center">Leadership Core</p>
+                </div>
+                
+        </div>
+    <!-- Year 2 -->
+        <h1 class="text-center text-2xl lg:text-3xl font-bold border-b-2 border-black">YEAR 2</h1>
+
+        <div class="grid md:grid-cols-3 md:gap-4 md:mx-auto grid-cols-1 gap-2 my-2">
+                
+            <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+                <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 1</h1>
+                <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+                    <li>Mathematics for Computing</li>
+                    <li>Intro to Network Technology</li>
+                    <li>Software Engineering</li>
+                    <li>Programming 1</li>
+                </ul>
+            </div>
+        
+            <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+                <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 2</h1>
+                <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+                    <li>Mathematics for Computing</li>
+                    <li>Intro to Network Technology</li>
+                    <li>Web Platform Development 1</li>
+                    <li>Database Development</li>
+                </ul>
+            </div>
+        
+            <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+                <h1 class=" text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 3</h1>
+                <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+                    <li>Integrated Project 1 + Placement</li>
+                </ul>
+            </div>
+            
+    </div>
+    <!-- Year 3 -->
+    <h1 class="text-center text-2xl lg:text-3xl font-bold border-b-2 border-black">YEAR 3</h1>
+            <div class="grid md:grid-cols-3 md:gap-4 md:mx-auto grid-cols-1 gap-2 my-2">
+                
+                    
+                
+                
+                    <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+                        <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 1</h1>
+                        <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+                            <li>Human-Computer Interactions</li>
+                            <li>Programming 2</li>
+                            <li>IT Project Management 1</li>
+                            <li>Object-Oriented Analysis and Design</li>
+                        </ul>
+                    </div>
+                
+                    <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+                        <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 2</h1>
+                        <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+                            <li>Data Structures and Algorithms</li>
+                            <li>Research Skills and Professional Issues</li>
+                            <li>Web-Design Technologies</li>
+                        </ul>
+                    </div>
+                
+                    <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+                        <h1 class=" text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 3</h1>
+                        <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+                            <li>Integrated Project 2 + Placement</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+    <!-- Year 4 -->
+<h1 class="text-center text-2xl lg:text-3xl font-bold border-b-2 border-black">YEAR 4</h1>
+<div class="grid md:grid-cols-3 md:gap-4 md:mx-auto grid-cols-1 gap-2 my-2">
+                
+    <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+        <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 1</h1>
+        <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+            <li>Big Data</li>
+                <li>Systems Programming</li>
+                <li>Application Architecture and Design Patterns</li>
+                <li>Web Platform Development 2</li>
+        </ul>
+    </div>
+
+    <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+        <h1 class="text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 2</h1>
+        <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+            <li>Mobile Platform Development</li>
+                <li>Cloud Platform Development</li>
+                <li>Secure Software Development</li>
+        </ul>
+    </div>
+
+    <div class="w-auto h-auto p-3 hover:shadow-2xl transition-all rounded-md mx-auto">
+        <h1 class=" text-center font-open text-base lg:text-2xl font-semibold md:font-bold">Term 3</h1>
+        <ul class="list-disc list-inside pt-3 lg:pt-4 text-sm lg:text-lg">
+            <li>Honours Project</li>
+        </ul>
+    </div>
+    
+</div>
+</div>
+     <!--Some Module Descriptions-->
+    
+    <div class="courses">
+
+        <h1 class="mt-40 text-center text-1xl lg:text-3xl font-bold mx-20">Due to the ALU Advantage, have a look at what our students have accomplished. The knowledge they have and the ability to applying their skills in real world scenarios.</h1>
+
+           <!-- Web Development Section -->
+    <div class="" id="web_dev">
+        <div  class= "text-center text-2xl lg:text-4xl">
+           <h3 class= "font-bold text-left mt-20 ml text-center">Web Development</h3>
+        </div> 
+ 
+       <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
+        <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
+            <img class="image__img h-auto" src="./computing_page/computing_images/web_dev.jpg" alt="Website">
+            <div class="image__overlay image__overlay--blur lg:text-4xl">
+                <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="#" target="parent">Explore</a>
+            </div> 
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Security Landscapes -->
+    <div id="security_landscapes">
+        <h1 class="text-center text-2xl lg:text-4xl font-bold">Security Landscapes</h1>
+     <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
+        <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
+            <img class="image__img" src="./computing_page/computing_images/cyber_sec.jpg" alt="Website">
+            <div class="image__overlay image__overlay--blur lg:text-4xl">
+                <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="./course specifications/Security_Landscapes.docx" target="parent">Explore</a>
+            </div> 
+        </div>
+     </div>
+        </div>
+        <!-- Programming Section -->
+      <div id="programming">
+        <h3 class= "font-bold text-2xl text-center lg:text-4xl">Programming</h3>
+       
+ 
+      <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
+        <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
+            <img class="image__img" src="./computing_page/computing_images/programming.jpg" alt="Website">
+            <div class="image__overlay image__overlay--blur lg:text-4xl">
+                <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="./course specifications/Programming.pdf" target="parent">Explore</a>
+            </div> 
+        </div>
+      </div>
+    </div>
+   
+     
+      <!-- Database Development -->
+     <div class="Data">
+        <h1 class="font-bold text-2xl text-center lg:text-4xl">Database Development</h1>
+        <div class=" h-auto flex mx-9 lg:mx-24 my-16 shadow-2xl" style="background-color: #fafbfb;"> 
+            <div class="image2 mx-auto lg:my-auto justify-center self-center align-middle">
+                <img class="image__img" src="./computing_page/computing_images/database_dev.jpg" alt="Website">
+                <div class="image__overlay image__overlay--blur lg:text-4xl">
+                    <a class="text-white font-bold w-auto py-10 text-2xl lg:text-4xl" id="button" href="https://www.gcu.ac.uk/study/modules/info/?Module=M2I322954"  target="parent">Explore</a>
+                </div> 
+            </div>
+          </div>
+        </div>
+        </div>
+        
+     <!--Testimonials-->
+ <div class="title-box justify-items-center">
+      <h1 class="font-open text-center text-4xl lg:text-5xl font-bold"> Our Students</h1>
+  <p class="text-center text-xl lg:text-xl font-light">Interact with our Computing Students</p>
+  </div>
+<div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-1 mx-auto lg:mx-20">
+
+        <div>
+        <div class="profile-box mx-auto">
+            <h4>Nathan</h4>
+            <small>Year 4</small>
+            <img src="./computing_page/computing_images/Nathan.jpeg">
+            <div class="social-box">
+               <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>
+                   <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>
+                   <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i>
+                   <a href="../html/map.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a>
+            </div>
+             <p> I believe that the Computing degree at ALC prepares you very much for certain aspects of what life can and will be like as a software developer. You’ll find that in as much as the course content may hold information relevant to completing your assignments, you’ll always stand to gain more by being more assertive and taking initiative in doing your own research. There will be situations in which relying on the content alone is not enough. You’ll learn to be independent, to do your own research for your own betterment. You learn to take control of your own academic improvement. And that is extremely valuable. </p>
+        </div>
+            </div>
+        <div>
+        <div class=" profile-box mx-auto">
+            <h4>  Rudo Togara</h4>
+            <small>Cloud Solutions Specialist</small>
+            <img src="./computing_page/computing_images/Rudo.jpeg">
+            <div class="social-box">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>
+                    <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-linkedin"></i>
+                    <a href="../html/map.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a>
+            </div>
+             <p> Before I started studying Computing, I had a fixed mindset about what it entailed. I had very little knowledge of all the opportunities that are within this department and I am grateful that now, I am becoming aware of them. Not only have I come to know these opportunities but I have also become part of the whole innovation around the science of computing. With every project I work on, I learn and I use that to show other people the possibilities that are created within this department.
+                 </p>
+        </div>
+            </div>
+        <div>
+        <div class=" profile-box mx-auto">
+            <h4>Cynthia Iraduka</h4>
+            <small>Software Architect</small>
+            <img src="./computing_page/computing_images/Cynthia.jpeg">
+            <div class="social-box">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>
+                    <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-linkedin"></i>
+                    <a href="../html/map.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a>
+            </div>
+             <p> What I like best about the computing degree is the possibility to first explore the different fields in tech. I wasn't sure which field of technology I wanted to specialize in when I first arrived at ALU. But I'm relieved that I can safely state that after graduation, I'll pursue a career in software engineering.</p>
+        </div>
+            </div>
+        <div>
+        <div class=" profile-box mx-auto">
+            <h4>  Esther Babalola</h4>
+            <small>Software Product Developer</small>
+            <img src="./computing_page/computing_images/esther2.jpg">
+            <div class="social-box">
+                   <a href="https://www.instagram.com/alueducation/"><i class="fab fa-facebook"></i></a>
+                   <a href="https://www.instagram.com/alueducation/"><i class="fab fa-instagram"></i></a>
+                   <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/alueducation/"><i class="fab fa-linkedin"></i></a>
+                   <a href="../html/map.html"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a>
+            </div>
+             <p> I did my bachelor’s and masters degree at the University of Lagos. I am the CEO of KJK Africa, one of Nigeria’s leading Software Design and Development Company. At KJK, I lead a team of tech experts to build software products and deliver services that help businesses optimize production and service processes, deepen the customer relationship, and grow revenue.
+            </p>
+        </div>
+            </div>
+
+      </div>
+
+
+
+    <!--Disqus comment box-->
+    <div class="mx-10 my-5">
+          <div id="disqus_thread"></div>
+             <script>
+        
+        var disqus_config = function () {
+        this.page.url = 'http://127.0.0.1:5500/index.html';  
+        this.page.identifier = 'alu_computing';
+        };
+    
+        (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://alu-disqus-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    
+   </div> 
+     </main>
+</body>
+</html>
