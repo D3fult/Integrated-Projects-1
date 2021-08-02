@@ -12,55 +12,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/website/index.css">
     <link rel="stylesheet" href="./about.css">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main class="bg-white" id="main">
-        <!-- Creates a container with flex to hold the logo and navbar links -->
-        <div class="relative z-30 lg:mx-20 flex justify-between items-center">
-            <div>
-                <a href="/home/index.html">
-                    <img class="my-5" src="/website/alu_logo.jpg" alt="ALU Logo" width="250px" height="250px">
-                </a>
+        <!-- Navigation -->
+        <div class="flex">
+        <nav class="flex-grow items-center justify-between">
+      
+            <!--Logo-->
+            <div class=" float-left" id="logo">
+              <img class="mt-2 mx-auto" src="./images/Logo.jpg" alt="Logo" width="200px" height="200px" />
             </div>
-        
-            <div class="px-4 md:hidden cursor-pointer" id="burger">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 172 172"
-                    style=" fill: #d00d2c">
-                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                        style="mix-blend-mode: normal">
-                        <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
-                        <g fill="#d00d2c">
-                            <path
-                                d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z">
-                            </path>
-                        </g>
-                    </g>
-                </svg>
+            <!--Page menu-->
+            <div class="float-right ">
+              <ul class="hidden md:block flex-shrink">
+                <!--Possible tailwind code 'float-left flex items-center text-l space-x-6 mx-6 whitespace-nowrap '-->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">The Alu Advantage</a></li>
+                <li><a href="mauritius.html">Undergraduate</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
             </div>
-        
-            <!-- Navbar links section -->
-            <div class="hidden md:inline-block" id="navlinks">
-                <div class="sm:my-8 md:my-10 lg:my-12">
-                    <a href="/index.html" class="mr-5 md:mr-3 lg:mr-5 text-xs md:text-tiny lg:text-sm" id="links">HOME</a>
-                    <a href="#" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">THE ALU ADVANTAGE</a>
-                    <a href="/undergraduate/undergraduate.html" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">UNDERGRADUATE</a>
-                    <a href="/student-life/student-life.html" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm"
-                        id="links">STUDENT LIFE</a>
-                    <a href="/about/about.html" class="active ml-5 md:ml-3 md:mr-4 lg:ml-5 text-xs md:text-tiny lg:text-sm" id="links">ABOUT</a>
+            <!--NOTE: FINISH THE RESPONSIVE SMALL SCREEN NAVBAR-->
+            <!--Small Screen-->
+            <!--Menu Icon Small screen-->
+            <div class="float-right md:hidden pr-4" >
+                <button class=" hover:bg-gray-900 rounded-md hover:text-white px-1 my-5 nav-toggler focus:outline-none" id="menuIcon"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+              <!--Sm NavLinks-->
+                <div class=" hidden bg-gray-900 w-full absolute mt-20" id="navSm" >
+                  <div class="w-full">
+      
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Home</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>The Alu Advantage</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="mauritius.html"> <span>Undergraduate</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>Student Life</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="#"> <span>About</span></a></div>
+                  </div>
                 </div>
-            </div>
-        </div>
+              
+          </nav></div>
+
+        <main class="bg-white" id="main">
+    
 
         <!-- Page heading -->
-        <h1 class="my-5 lg:my-0 font-open text-center text-4xl lg:text-5xl font-bold">The Architects</h1>
+        <h1 class=" mt-24 md:mt-10 font-open text-center text-4xl lg:text-5xl font-bold">The Architects</h1>
         
         <!-- Group 1 members -->
-        <div class="h-full mx-9 lg:mx-24 my-16">
-            <div>
-                <!-- Tammy -->
-                <div class="image1">
+        <div class=" mt-10 grid md:grid-cols-2 gap-2 lg:mx-10 ">
+
+            <!-- Tammy -->
+            <div class="image1 mx-auto">
                 <img class="image__img rounded-full shadow-2xl" src="./images/tammy.jpg" alt="Tammy - Web Developer">
                 <div class="image__overlay image__overlay--blur rounded-full">
                     <h1 class="font-open text-center text-4xl lg:text-2xl font-bold">Tamunotonye Briggs</h1><br>
@@ -74,7 +83,7 @@
                 </div>
 
                 <!-- Umma-Hani -->
-                <div class="image2">
+                <div class="image2 mx-auto">
                 <img class="image__img rounded-full shadow-2xl" src="./images/umma-hani.jpg" alt="Umma-Hani - Website Developer">
                 <div class="image__overlay image__overlay--blur rounded-full">
                     <h1 class="font-open text-center text-4xl lg:text-2xl font-bold">Umma-Hani Olomada</h1><br>
@@ -85,7 +94,7 @@
                 </div>
 
                 <!-- Seth -->
-                <div class="image3">
+                <div class="image3 mx-auto">
                 <img class="image__img rounded-full shadow-2xl" src="./images/seth.jpg" alt="Seth - Website Developer">
                 <div class="image__overlay image__overlay--blur rounded-full">
                     <h1 class="font-open text-center text-4xl lg:text-2xl font-bold">Seth Atorudibo</h1><br>
@@ -96,11 +105,11 @@
                     </p>
                 </div>
                 </div>
-            </div>
 
-            <div class="flex flex-wrap justify-center">
                 <!-- Ronnie -->
-                <div class="image4 lg:mr-1 mb-1">
+                <!-- has a container that disappears on larger screens and greater. this also goes for Nnamdi's profile -->
+                <div class="mx-auto">
+                <div class="image4 ">
                     <img class="image__img rounded-full shadow-2xl" src="./images/ronnie.jpg" alt="Ronnie - Web Developer">
                     <div class="image__overlay image__overlay--blur rounded-full">
                         <h1 class="font-open text-center text-4xl lg:text-2xl font-bold">Ronnie Ineza</h1><br>
@@ -113,30 +122,32 @@
                             newly developed skills.<br><br>To get in touch, you can reach him by <a class="link" href="mailto:r.ineza@alustudent.com">Email</a> or <a class="link" href="tel://+254700919590">Cell</a>.
                         </p>
                     </div>
-                </div>
+                </div></div>
 
                 <!-- Nnamdi -->
-                <div class="image5">
+                <div class="md:col-span-2 mx-auto ">
+                <div class="image5 ">
                     <img class="image__img rounded-full shadow-2xl" src="./images/nnamdi.jpg" alt="Nnamdi - Web Developer">
                     <div class="image__overlay image__overlay--blur rounded-full">
                         <h1 class="font-open text-center text-4xl lg:text-2xl font-bold">Nnamdi Onwuka</h1><br>
                         <p class="mx-5 lg:mx-5 text-xs lg:text-xs font-light lg:font-light text-center">
                             An aspiring Network Security Engineer turned Penetration Tester/Ethical Hacker hailing from Nigeria.<br><br>He has a profound passion for securing networks and hardening the software and hardware devices on these networks,
                             monitoring network traffic and maximizing performance, and testing systems for security breaches or vulnerabilities, among all.</p><br>
-                        <!-- <ul class="list-disc list-inside mx-auto lg:mx-5 text-xs lg:text-xs lg:font-light">
-                            <li>securing networks and hardening the software and hardware devices on these networks,</li>
-                            <li>monitoring network traffic and maximizing performance,</li>
-                            <li>testing systems for security breaches or vulnerabilities,</li>
-                            <li>collaborating within teams, and</li>
-                            <li>strengthening overall security posture amongst all.</li>
-                        </ul><br> -->
                         <p class="mx-5 lg:mx-5 text-xs lg:text-xs lg:font-light text-center">His contribution to this project were 
                             creating the wireframe, redesigning the ALU Footer, Home & Student Life pages with the goal to be as simple and concise as possible. Thanks to the efficiency of the Tailwind CSS Framework introduced by his teammate, this
                             goal was successfully achieved.<br><br>To get in touch, you can reach him by <a class="link" href="mailto:n.onwuka@alustudent.com">Email</a> or <a class="link" href="tel://+442340415347">Cell</a>.
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Profile for ronnie and nnamdi on large screens and greater -->
+               
+                </div>
+                </div>
+
         </div>
+
 
         <!-- Who is Group 1? -->
         <div class="mx-auto my-14 pb-40 lg:pb-60">
