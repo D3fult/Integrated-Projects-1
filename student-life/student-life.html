@@ -13,47 +13,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/student-life/student-life.css">
     <link rel="stylesheet" type="text/css" href="/website/index.css">
+    <link rel="stylesheet" href="../Alu Advantage_Mauriitus_Computing_Page/style.css">
+    <script src="../Alu Advantage_Mauriitus_Computing_Page/script.js" defer></script>
 </head>
 
 <body>
-    <!-- Creates a container with flex to hold the logo and links for the navbar -->
-    <main class="bg-white" id="main">
     <!-- Creates a container with flex to hold the logo and navbar links -->
-    <div class="relative z-30 lg:mx-20 flex justify-between items-center">
-            <div>
-                <a href="/home/index.html">
-                    <img class="my-5" src="/website/alu_logo.jpg" alt="ALU Logo" width="250px" height="250px">
-                </a>
+    <!-- Creates a container with flex to hold the logo and navbar links -->
+    <div class="relative z-30 flex justify-between items-center bg-white">
+        <nav class="flex-grow items-center justify-between">
+      
+            <!--Logo-->
+            <div class=" float-left" id="logo">
+              <img class="mt-2 mx-auto" src="../Alu Advantage_Mauriitus_Computing_Page/images/Logo.jpg" alt="Logo" width="200px" height="200px" />
             </div>
-    
-            <div class="px-4 md:hidden cursor-pointer" id="burger">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 172 172"
-                    style=" fill: #d00d2c">
-                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                        style="mix-blend-mode: normal">
-                        <path d="M0,172.00002v-172.00002h172.00002v172.00002z" fill="none"></path>
-                        <g fill="#d00d2c">
-                            <path
-                                d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z">
-                            </path>
-                        </g>
-                    </g>
-                </svg>
+            <!--Page menu-->
+            <div class="float-right ">
+              <ul class="hidden md:block flex-shrink">
+                <!--Possible tailwind code 'float-left flex items-center text-l space-x-6 mx-6 whitespace-nowrap '-->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Alu Advantage_Mauriitus_Computing_Page/index.html">The Alu Advantage</a></li>
+                <li><a href="../undergraduate/undergraduate.html">Undergraduate</a></li>
+                <li><a href="../student-life/student-life.html">Student Life</a></li>
+                <li><a href="../about/about.html">About</a></li>
+              </ul>
             </div>
-    
-            <!-- Navbar links section -->
-            <div class="hidden md:inline-block" id="navlinks">
-                <div class="sm:my-8 md:my-10 lg:my-12">
-                    <a href="/index.html" class="mr-5 md:mr-3 lg:mr-5 text-xs md:text-tiny lg:text-sm" id="links">HOME</a>
-                    <a href="#" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">THE ALU ADVANTAGE</a>
-                    <a href="/undergraduate/undergraduate.html" class="m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">UNDERGRADUATE</a>
-                    <a href="/student-life/student-life.html" class="active m-5 md:m-3 lg:m-5 text-xs md:text-tiny lg:text-sm" id="links">STUDENT LIFE</a>
-                    <a href="/about/about.html" class="ml-5 md:ml-3 md:mr-4 lg:ml-5 text-xs md:text-tiny lg:text-sm" id="links">ABOUT</a>
+            <!--NOTE: FINISH THE RESPONSIVE SMALL SCREEN NAVBAR-->
+            <!--Small Screen-->
+            <!--Menu Icon Small screen-->
+            <div class="float-right md:hidden pr-4" >
+                <button class=" hover:bg-gray-900 rounded-md hover:text-white px-1 my-5 nav-toggler focus:outline-none" id="menuIcon"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+              <!--Sm NavLinks-->
+                <div class=" hidden bg-gray-900 w-full absolute mt-20" id="navSm" >
+                  <div class="w-full">
+      
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="../index.html"> <span>Home</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="../Alu Advantage_Mauriitus_Computing_Page/index.html"> <span>The Alu Advantage</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="../undergraduate/undergraduate.html"> <span>Undergraduate</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="../student-life/student-life.html"> <span>Student Life</span></a></div>
+                    <div class="px-3 py-2 rounded text-gray-500 hover:text-white hover:bg-gray-600"><a href="../about/about.html"> <span>About</span></a></div>
+                  </div>
                 </div>
-            </div>
-    </div>
+              
+          </nav>
+</div>
+
+    <main class="bg-white" id="main">
+    
 
     <!-- Creates a container to hold student created ALC video -->
     <div class="relative w-full lg:h-screen bg-transparent lg:bg-black lg:bg-opacity-70">
