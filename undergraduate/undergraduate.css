@@ -79,6 +79,10 @@ Variables were edited to serve my purpose. */
   transform: scale(1.04);
 }
 
+#campus_img:hover{
+  transform: scale(1.04);
+}
+
 /* small screen (mobile) */
 @media (min-width: 500px) {
   .map {

@@ -64,8 +64,8 @@
         
 
         <!-- Creates a container with flex to hold the glowing ALU logo at night and text beside the image -->
-        <div class="lg:pl-12 lg:pr-20 w-full h-full flex flex-wrap justify-between items-center">
-            <div class="child1">
+        <div class=" hidden lg:pl-12 lg:pr-20 w-full h-full flex flex-wrap justify-between items-center">
+            <div class="hidden child1">
                 <img class="shadow-2xl " id="alu-night" src="./images/alu-night.jpg" alt="ALU Beau Plan">
             </div>
 
@@ -79,9 +79,24 @@
                 </p>
             </div>
         </div>
+            <!-- Night scene section -->
+        <div class=" grid md:grid-cols-2 gap-4">
+            <div class="p-10 mx-auto my-auto ">
+                <img class="shadow-2xl h-auto w-auto rounded-md" src="./images/alu-night.jpg" alt="ALU Beau Plan">
+            </div>
+            <div class="p-10 my-auto mx-auto">
+                <h1 class="mt-10 lg:mt-0 font-open text-center text-2xl md:text-2xl lg:text-5xl font-bold">Two Different Countries,<br>One Amazing Experience.</h1><br><br>
+                <p class=" text-sm lg:text-xl">Africa is home to some of the most diverse people on the planet, both within and across its countries, making it a land
+                rich in untapped opportunities. ALU offers an experience designed to address one of the continent’s greatest challenges
+                - accessible education that develops ethical and entrepreneurial leaders.<br><br>Therefore, ALU's Undergraduate Degrees are designed to provide students with an organized educational experience. Students begin
+                with the Leadership Core, where they acquire essential practical skills that will assist them in their professional settings.
+                Following that, they progress to their Degree Programs, where they pursue their selected majors.
+                </p>
+            </div>
+        </div>
 
         <!-- Creates a container with flex to hold advantages of both ALU campuses and a map of Africa with campus markers -->
-        <div class="container2 w-full h-screen flex flex-wrap justify-between items-center">
+        <div class=" hidden container2 w-full h-screen flex flex-wrap justify-between items-center">
             <div class="mx-10 my-10 lg:mx-0 lg:my-0 w-auto lg:w-3/6 self-center">
                 <h1 class="mt-10 lg:mt-0 font-open text-center text-2xl md:text-2xl lg:text-5xl font-bold">ALU Campuses Offer:</h1><br><br>                
                 <ul class="list-disc list-outside mx-14 md:mx-auto lg:mx-28 text-sm lg:text-xl">
@@ -100,16 +115,57 @@
             </div>
         </div>
 
-        <div class="mt-10 mb-10 lg:mt-28 lg:mb-28 w-full h-auto">
+
+        <!-- Campus Offering section -->
+        <div class=" grid md:grid-cols-2 gap-2 my-5 mx-5" style="background-image: url(./images/alu-pattern.svg); background-size: 4%; background-repeat: repeat;">
+
+            <div>
+                <h1 class="mt-10 lg:mt-0 font-open text-center text-2xl md:text-2xl lg:text-5xl font-bold">ALU Campuses Offer:</h1><br><br>                
+                <ul class="list-disc list-outside mx-14 md:mx-auto lg:mx-28 text-sm lg:text-xl">
+                    <li>An innovative learning experience driven by the seven meta-skills we believe is sought out by top employers across the
+                    globe. In our Leadership Core, you will practice and master these skills.</li><br>
+                    <li>A selection of degree programmes supplemented by our African Studies course.</li><br>
+                    <li>A pan-African experience that allows you to network and establish relationships with some of the continent's brightest,
+                    most enthusiastic, and motivated peers and leaders.</li><br>
+                    <li>A robust ALUAlive Programme to help you create a meaningful Student Life experience for yourself that is full of growth,
+                    discovery, and ownership.</li><br>
+                </ul>
+            </div>
+            <div>
+                <img class="mx-auto" src="./images/alu_orig.png"
+                    alt="African Map of ALU Campuses">
+            </div>
+
+        </div>
+
+        
+        <div class=" hidden mt-10 mb-10 lg:mt-28 lg:mb-28 w-full h-auto">
             <h1 class="font-open text-center text-4xl lg:text-5xl font-bold">Now, The Only Question That Remains<br>Is, Which Campus Is Best For You?</h1>
         </div>
         
         <!-- Creates a container with flex to hold ALU campus images -->
-        <div class="locations mx-auto lg:mx-28 pb-40 lg:pb-60 flex flex-wrap justify-between">
+        <div class=" hidden locations mx-auto lg:mx-28 pb-40 lg:pb-60 flex flex-wrap justify-between">
             <a href="../Alu Advantage_Mauriitus_Computing_Page/mauritius.html"><img class="map md:mx-auto shadow-2xl" src="./images/alc-campus-map.png" alt="Mauritius Campus"></a>
             
             <a href="./rwanda.html"><img class="map md:mx-auto shadow-2xl" src="./images/alu-campus-map.jpg" alt="Rwandan Campus"></a>
         </div>
+
+
+        <!-- Rwanda and Mauritius Campus links section -->
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4 mx-auto mb-5">
+                <div class="md:col-span-2 mx-2">
+                <h1 class="font-open text-center text-4xl lg:text-5xl font-bold ">Now, The Only Question That Remains<br>Is, Which Campus Is Best For You?</h1>
+                    </div>
+             <div class="p-10">
+                <a href="../Alu Advantage_Mauriitus_Computing_Page/mauritius.html">
+                    <img class="md:mx-auto shadow-2xl rounded-md cursor-pointer" src="./images/alc-campus-map.png" alt="Mauritius Campus" style="transition: 0.2s ease;" id="campus_img"></a>
+             </div>
+             <div class="p-10">
+                <a href="./rwanda.html"><img class="md:mx-auto shadow-2xl rounded-md cursor-pointer" src="./images/alu-campus-map.jpg" alt="Rwandan Campus" style="transition: 0.2s ease;" id="campus_img"></a>
+             </div>
+        </div>
+
+
     </main>
 
     <!-- This is used to create the parallax scroll on the footer. Courtesy of https://medium.com/swlh/how-to-responsive-parallax-footer-bc3ccb3ce8f1 -->
