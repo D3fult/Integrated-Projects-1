@@ -62,3 +62,10 @@ nav ul li:hover {
    width: 400px;
  }
 }
+
+@media (max-width: 332px) {
+  #overlay_txt{
+    position: absolute;
+    top:18vh;
+  }
+}
