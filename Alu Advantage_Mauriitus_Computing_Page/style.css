@@ -44,28 +44,9 @@ nav ul li:hover {
     top: 80vh;
   }
 }
-@media (max-width: 375px) {
-  #overlay_txt{
-    position: absolute;
-    top:20vh;
-  }
-}
-@media (max-width:600px){
-#overlay_txt{
-  position: absolute;
-  top:30vh;
-}
-}
 @media (max-width: 768px) {
  #academic_director{
    height: 400px;
    width: 400px;
  }
-}
-
-@media (max-width: 332px) {
-  #overlay_txt{
-    position: absolute;
-    top:18vh;
-  }
 }
